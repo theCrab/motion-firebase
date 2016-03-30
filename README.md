@@ -10,10 +10,8 @@ For a Ruby (MRI) Firebase wrapper, check out <https://github.com/derailed/bigber
 Installation
 ============
 
-The **motion-firebase** gem ships with "freeze dried" copies of the Firebase
-framework.  This way we can guarantee that the version of **motion-firebase** is
-*definitely* compatible with the version of Firebase that is included.  As new
-features get announced, we update the gem.
+The **motion-firebase** gem DOES NOT ship with any "freeze dried" copies of the Firebase
+framework.  This **motion-firebase** is *definitely* compatible with **Firebase 2.5.0**. It is expected that you install that firebase version using cocoapods. This is due to avoid conflicts with other third party libs that ship with Firebase ex. GeoFire.
 
 Also, it means that installation is easy!  When you compile your RubyMotion
 project, the Firebase SDK gets included automatically.
