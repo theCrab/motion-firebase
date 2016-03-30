@@ -16,10 +16,21 @@ framework.  This **motion-firebase** is *definitely* compatible with **Firebase 
 Also, it means that installation is easy!  When you compile your RubyMotion
 project, the Firebase SDK gets included automatically.
 
-motion-firebase 3.0
+```rb
+#Gemfile
+gem 'motion-firebase', '= 3.3', github: 'theCrab/motion-firebase'
+
+# Rakefile
+app.pods do
+  pod 'Firebase', '~> 2.5' # remove this line if using GeoFire as a pod.
+  pod 'GeoFire', '~> 1.1' # GeoFire ships with its own copy of Firebase.
+end
+```
+
+motion-firebase 3.3
 ========
 
-Lots of changes in this version: [3.0.md](3.0.md)
+Breaking changes in this version: [3.3.md](3.3.md)
 
 # SDK
 
